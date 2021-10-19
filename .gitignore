@@ -1,4 +1,3 @@
 build/*
 conan/*
-lib/*
 .vscode
