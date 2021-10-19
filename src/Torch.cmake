@@ -15,7 +15,7 @@ find_package(Torch
 )
 include_directories(${TORCH_INCLUDE_DIRS})
 
-set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS})
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
 
 
 
