@@ -8,9 +8,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(${CMAKE_SOURCE_DIR}/conan/conanbuildinfo.cmake)
 conan_basic_setup()
 
-# Find the Libtorch
-add_subdirectory(lib)
-
 include_directories(include)
 add_subdirectory(src)
 

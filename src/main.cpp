@@ -1,6 +1,7 @@
+#include <torch/torch.h>
 #include <iostream>
-#include <h5pp/h5pp.h>
 
-int main(int, char**) {
-    std::cout << "Hello, world!\n";
+int main() {
+  torch::Tensor tensor = torch::rand({2, 3});
+  std::cout << tensor << std::endl;
 }
