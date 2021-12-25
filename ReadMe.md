@@ -43,10 +43,10 @@ multicoil_train/file_brain_AXFLAIR_200_6002425.h5
 
 ## Libraries and Dependencies
 
-1. Boost
-2. Catch2
-3. Eigen
-4. Gtk/Gtkmm4
+1. Boost | Boost Software License
+2. Catch2 | Boost Software License
+3. Eigen | Mozilla Public License 2.0
+4. Gtk/Gtkmm4 | LGPL
 
 ## Maintainer
 
