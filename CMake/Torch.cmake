@@ -10,15 +10,14 @@ if (UNIX)
 endif (UNIX)
 
 if(APPLE)
-    set( TORCH_LIBRARY_CMAKE "/Users/amirnourinia/Library/libTorch/1.10.1/share/cmake")
+    set(TORCH_LIBRARY_CMAKE "/Users/amirnourinia/Library/libTorch/1.10.1/share/cmake")
+    set(MACOSX_RPATH ON)
+    message(STATUS "Apple Detected. RPATH set.")
+    message(STATUS ${CMAKE_CURRENT_BINARY_DIR})
 endif(APPLE)
 
 
-find_package(Torch 
-                    REQUIRED
-                    PATHS ${TORCH_LIBRARY_CMAKE}
-)
-
+find_package(Torch REQUIRED PATHS ${TORCH_LIBRARY_CMAKE})
 include_directories(${TORCH_INCLUDE_DIRS})
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
 
