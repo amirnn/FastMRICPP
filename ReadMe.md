@@ -24,6 +24,21 @@ Install CUDA SDK toolkit on your machine:
 
 Amir Nourinia: [email](mailto:amir.nourinia@gmail.com)
 
+## How to Files
+
+The FastMRI database collects the .h5 files in tar.gz files. To be able to extract a file, one can simply list the files inside the archive and then extract the desired file. 
+
+(In macos install gnu-tar and use gtar command instead.)
+
+```console
+$ tar -ztf brain_multicoil_train.tar.gz
+$ tar --extract --occurrence=1 \
+--file brain_multicoil_train.tar.gz \
+--directory ~/Data/FastMRI \
+multicoil_train/file_brain_AXFLAIR_200_6002425.h5
+
+```
+
 ## Libraries and Dependencies
 
 1. Boost
