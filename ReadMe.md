@@ -17,12 +17,14 @@ A project for working with FastMRI database. The goal is to implement an opensou
 Install CUDA SDK toolkit on your machine:
 
 1. Install CuDNN Runtime and Development headers and libraries.
-2. Download and install libtorch on your machine, specify the respective path to its cmake folder in the CMakeLists.txt file inside the lib directory.
-3. We use conan for easier dependency management.
+2. Download and install libtorch on your machine, specify the respective path to its cmake folder in the CMakeLists.txt file inside the lib directory (i.e. $HOME/Library/libTorch/1.10.1/share/cmake/Torch). In macos because of rpath problems, one should add DYLD_FALLBACK_LIBRARY_PATH variable as an enviornemt variable. (TODO: RPATH needs fixing.)
+```console
+$ export DYLD_FALLBACK_LIBRARY_PATH="$HOME/Library/libTorch/1.10.1/lib:$DYLD_FALLBACK_LIBRARY_PATH"
+```
 
-## Maintainer
+## Data
 
-Amir Nourinia: [email](mailto:amir.nourinia@gmail.com)
+After configureing and building one can copy data into a folder in the folder where binary file resides.
 
 ## How to Files
 
@@ -46,6 +48,9 @@ multicoil_train/file_brain_AXFLAIR_200_6002425.h5
 3. Eigen
 4. Gtk/Gtkmm4
 
+## Maintainer
+
+Amir Nourinia: [email](mailto:amir.nourinia@gmail.com)
 
 ## License
 
