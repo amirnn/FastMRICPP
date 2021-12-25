@@ -9,12 +9,17 @@ if (UNIX)
     # set(TORCH_LIBRARY_CMAKE "/home/amir/Library/libtorch-shared-with-deps-1.9.1+cu111/share/cmake")
 endif (UNIX)
 
+if(APPLE)
+    set( TORCH_LIBRARY_CMAKE "/Users/amirnourinia/Library/libTorch/1.10.1/share/cmake")
+endif(APPLE)
+
+
 find_package(Torch 
                     REQUIRED
                     PATHS ${TORCH_LIBRARY_CMAKE}
 )
-include_directories(${TORCH_INCLUDE_DIRS})
 
+include_directories(${TORCH_INCLUDE_DIRS})
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
 
 
