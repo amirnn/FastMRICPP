@@ -9,7 +9,7 @@ A project for working with FastMRI database. The goal is to implement an opensou
 
 ```console
   $ cd conan
-  $ conan install .. --profile=profile_linux --build=missing
+  $ conan install . --profile=profile_linux --build=missing
 ```
 
 ## CUDA and Deeplearning
