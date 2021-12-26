@@ -55,7 +55,7 @@ multicoil_train/file_brain_AXFLAIR_200_6002425.h5
 
 ## Maintainer
 
-Amir Nourinia: [email](mailto:amir.nourinia@gmail.com)
+AmirN: [email](mailto:thebluecpp@gmail.com)
 
 ## License
 
