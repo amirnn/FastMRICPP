@@ -1,0 +1,6 @@
+find_package(wxWidgets REQUIRED)
+include(${wxWidgets_USE_FILE})
+link_directories(${wxWidgets_LIBRARY_DIRS})
+include_directories(${wxWidgets_INCLUDE_DIRS})
+set(wxLIBS ${wxWidgets_LIBRARIES})
+set(wxWidgets_USE_STATIC ON)

@@ -51,6 +51,7 @@ multicoil_train/file_brain_AXFLAIR_200_6002425.h5
 | Eigen | Mozilla Public License 2.0 |
 | wxWidgets | wxWindows Library Licence |
 | Gtk/Gtkmm4 | LGPL |
+| h5pp | MIT |
 
 ## Maintainer
 
@@ -58,4 +59,4 @@ Amir Nourinia: [email](mailto:amir.nourinia@gmail.com)
 
 ## License
 
-MIT based.
+MIT

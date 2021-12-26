@@ -8,7 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(${CMAKE_SOURCE_DIR}/conan/conanbuildinfo.cmake)
 conan_basic_setup()
 
-include(CMake/GTKmm.cmake)
+# include(CMake/GTKmm.cmake)
+include(CMake/wxWidgets.cmake)
 
 include_directories(include)
 add_subdirectory(src)
